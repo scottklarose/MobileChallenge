@@ -1,0 +1,6 @@
+target 'PaytmMobileChallenge' do
+    use_frameworks!
+    
+    pod 'BrightFutures'
+    pod 'couch'
+end

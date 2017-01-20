@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		106A59141E2E04560045A910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59131E2E04560045A910 /* AppDelegate.swift */; };
+		106A59191E2E04560045A910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106A59171E2E04560045A910 /* Main.storyboard */; };
+		106A591B1E2E04560045A910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106A591A1E2E04560045A910 /* Assets.xcassets */; };
+		106A591E1E2E04560045A910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106A591C1E2E04560045A910 /* LaunchScreen.storyboard */; };
+		106A59291E2E04560045A910 /* PaytmMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */; };
+		106A59341E2E04560045A910 /* PaytmMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59331E2E04560045A910 /* PaytmMobileChallengeUITests.swift */; };
+		106A59431E2F2E4C0045A910 /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59421E2F2E4C0045A910 /* CurrencyConverterViewController.swift */; };
+		106A594A1E30686D0045A910 /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59491E30686D0045A910 /* CurrencyConverterPresenter.swift */; };
+		106A594C1E30690A0045A910 /* ExchangeRateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A594B1E30690A0045A910 /* ExchangeRateInteractor.swift */; };
+		106A594E1E3069ED0045A910 /* ExchangeRateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A594D1E3069ED0045A910 /* ExchangeRateGateway.swift */; };
+		106A59531E306B9B0045A910 /* CurrencyConverterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */; };
+		106A595C1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A595B1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift */; };
+		31DE2AD7233DB31CECA59990 /* Pods_PaytmMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		106A59251E2E04560045A910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106A59081E2E04560045A910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 106A590F1E2E04560045A910;
+			remoteInfo = PaytmMobileChallenge;
+		};
+		106A59301E2E04560045A910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106A59081E2E04560045A910 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 106A590F1E2E04560045A910;
+			remoteInfo = PaytmMobileChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		106A59101E2E04560045A910 /* PaytmMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaytmMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		106A59131E2E04560045A910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		106A59181E2E04560045A910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		106A591A1E2E04560045A910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		106A591D1E2E04560045A910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		106A591F1E2E04560045A910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106A59241E2E04560045A910 /* PaytmMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmMobileChallengeTests.swift; sourceTree = "<group>"; };
+		106A592A1E2E04560045A910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106A592F1E2E04560045A910 /* PaytmMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		106A59331E2E04560045A910 /* PaytmMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmMobileChallengeUITests.swift; sourceTree = "<group>"; };
+		106A59351E2E04560045A910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106A59421E2F2E4C0045A910 /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
+		106A59491E30686D0045A910 /* CurrencyConverterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenter.swift; sourceTree = "<group>"; };
+		106A594B1E30690A0045A910 /* ExchangeRateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateInteractor.swift; sourceTree = "<group>"; };
+		106A594D1E3069ED0045A910 /* ExchangeRateGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateGateway.swift; sourceTree = "<group>"; };
+		106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTypes.swift; sourceTree = "<group>"; };
+		106A595B1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseExchangeRateGateway.swift; sourceTree = "<group>"; };
+		106A59621E31B3F50045A910 /* PaytmMobileChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaytmMobileChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		630C657CBF37E36E08317DEE /* Pods_PaytmMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D28B33843920A6834357F1 /* Pods-PaytmMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		106A590D1E2E04560045A910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DE2AD7233DB31CECA59990 /* Pods_PaytmMobileChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A59211E2E04560045A910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A592C1E2E04560045A910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		106A59071E2E04560045A910 = {
+			isa = PBXGroup;
+			children = (
+				106A59121E2E04560045A910 /* PaytmMobileChallenge */,
+				106A59271E2E04560045A910 /* PaytmMobileChallengeTests */,
+				106A59321E2E04560045A910 /* PaytmMobileChallengeUITests */,
+				106A59111E2E04560045A910 /* Products */,
+				C9B37AE92592017F05A2D8BB /* Pods */,
+				9287A7E0BF6361A3CAB9A5FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		106A59111E2E04560045A910 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106A59101E2E04560045A910 /* PaytmMobileChallenge.app */,
+				106A59241E2E04560045A910 /* PaytmMobileChallengeTests.xctest */,
+				106A592F1E2E04560045A910 /* PaytmMobileChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		106A59121E2E04560045A910 /* PaytmMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				106A59411E2F2E220045A910 /* Paytm VIP Modules */,
+				106A59471E30668F0045A910 /* Gateways */,
+				106A59621E31B3F50045A910 /* PaytmMobileChallenge-Bridging-Header.h */,
+				106A59131E2E04560045A910 /* AppDelegate.swift */,
+				106A59171E2E04560045A910 /* Main.storyboard */,
+				106A591A1E2E04560045A910 /* Assets.xcassets */,
+				106A591C1E2E04560045A910 /* LaunchScreen.storyboard */,
+				106A591F1E2E04560045A910 /* Info.plist */,
+			);
+			path = PaytmMobileChallenge;
+			sourceTree = "<group>";
+		};
+		106A59271E2E04560045A910 /* PaytmMobileChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */,
+				106A592A1E2E04560045A910 /* Info.plist */,
+			);
+			path = PaytmMobileChallengeTests;
+			sourceTree = "<group>";
+		};
+		106A59321E2E04560045A910 /* PaytmMobileChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				106A59331E2E04560045A910 /* PaytmMobileChallengeUITests.swift */,
+				106A59351E2E04560045A910 /* Info.plist */,
+			);
+			path = PaytmMobileChallengeUITests;
+			sourceTree = "<group>";
+		};
+		106A59411E2F2E220045A910 /* Paytm VIP Modules */ = {
+			isa = PBXGroup;
+			children = (
+				106A59481E3067150045A910 /* Currency Converter */,
+			);
+			name = "Paytm VIP Modules";
+			sourceTree = "<group>";
+		};
+		106A59441E3065DD0045A910 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				106A59421E2F2E4C0045A910 /* CurrencyConverterViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		106A59451E3065E40045A910 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				106A59491E30686D0045A910 /* CurrencyConverterPresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		106A59461E3066660045A910 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				106A594B1E30690A0045A910 /* ExchangeRateInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		106A59471E30668F0045A910 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				106A594D1E3069ED0045A910 /* ExchangeRateGateway.swift */,
+				106A595B1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift */,
+			);
+			name = Gateways;
+			sourceTree = "<group>";
+		};
+		106A59481E3067150045A910 /* Currency Converter */ = {
+			isa = PBXGroup;
+			children = (
+				106A59541E306BA50045A910 /* Types */,
+				106A59441E3065DD0045A910 /* Views */,
+				106A59451E3065E40045A910 /* Presenters */,
+				106A59461E3066660045A910 /* Interactors */,
+			);
+			name = "Currency Converter";
+			sourceTree = "<group>";
+		};
+		106A59541E306BA50045A910 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		9287A7E0BF6361A3CAB9A5FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */,
+				2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */,
+				630C657CBF37E36E08317DEE /* Pods_PaytmMobileChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B37AE92592017F05A2D8BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */,
+				D1D28B33843920A6834357F1 /* Pods-PaytmMobileChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		106A590F1E2E04560045A910 /* PaytmMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106A59381E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallenge" */;
+			buildPhases = (
+				8D671725FCA4586407E6AAA6 /* [CP] Check Pods Manifest.lock */,
+				106A590C1E2E04560045A910 /* Sources */,
+				106A590D1E2E04560045A910 /* Frameworks */,
+				106A590E1E2E04560045A910 /* Resources */,
+				2BC071AA8ED2F18DC368E754 /* [CP] Embed Pods Frameworks */,
+				226E5C061712E84C5AD433AD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaytmMobileChallenge;
+			productName = PaytmMobileChallenge;
+			productReference = 106A59101E2E04560045A910 /* PaytmMobileChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		106A59231E2E04560045A910 /* PaytmMobileChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106A593B1E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallengeTests" */;
+			buildPhases = (
+				106A59201E2E04560045A910 /* Sources */,
+				106A59211E2E04560045A910 /* Frameworks */,
+				106A59221E2E04560045A910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				106A59261E2E04560045A910 /* PBXTargetDependency */,
+			);
+			name = PaytmMobileChallengeTests;
+			productName = PaytmMobileChallengeTests;
+			productReference = 106A59241E2E04560045A910 /* PaytmMobileChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		106A592E1E2E04560045A910 /* PaytmMobileChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106A593E1E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallengeUITests" */;
+			buildPhases = (
+				106A592B1E2E04560045A910 /* Sources */,
+				106A592C1E2E04560045A910 /* Frameworks */,
+				106A592D1E2E04560045A910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				106A59311E2E04560045A910 /* PBXTargetDependency */,
+			);
+			name = PaytmMobileChallengeUITests;
+			productName = PaytmMobileChallengeUITests;
+			productReference = 106A592F1E2E04560045A910 /* PaytmMobileChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		106A59081E2E04560045A910 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Paytm;
+				TargetAttributes = {
+					106A590F1E2E04560045A910 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6W3V3G54LK;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					106A59231E2E04560045A910 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6W3V3G54LK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 106A590F1E2E04560045A910;
+					};
+					106A592E1E2E04560045A910 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6W3V3G54LK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 106A590F1E2E04560045A910;
+					};
+				};
+			};
+			buildConfigurationList = 106A590B1E2E04560045A910 /* Build configuration list for PBXProject "PaytmMobileChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 106A59071E2E04560045A910;
+			productRefGroup = 106A59111E2E04560045A910 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				106A590F1E2E04560045A910 /* PaytmMobileChallenge */,
+				106A59231E2E04560045A910 /* PaytmMobileChallengeTests */,
+				106A592E1E2E04560045A910 /* PaytmMobileChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		106A590E1E2E04560045A910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106A591E1E2E04560045A910 /* LaunchScreen.storyboard in Resources */,
+				106A591B1E2E04560045A910 /* Assets.xcassets in Resources */,
+				106A59191E2E04560045A910 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A59221E2E04560045A910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A592D1E2E04560045A910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		226E5C061712E84C5AD433AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC071AA8ED2F18DC368E754 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D671725FCA4586407E6AAA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		106A590C1E2E04560045A910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106A595C1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift in Sources */,
+				106A594E1E3069ED0045A910 /* ExchangeRateGateway.swift in Sources */,
+				106A59141E2E04560045A910 /* AppDelegate.swift in Sources */,
+				106A59531E306B9B0045A910 /* CurrencyConverterTypes.swift in Sources */,
+				106A594C1E30690A0045A910 /* ExchangeRateInteractor.swift in Sources */,
+				106A59431E2F2E4C0045A910 /* CurrencyConverterViewController.swift in Sources */,
+				106A594A1E30686D0045A910 /* CurrencyConverterPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A59201E2E04560045A910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106A59291E2E04560045A910 /* PaytmMobileChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106A592B1E2E04560045A910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106A59341E2E04560045A910 /* PaytmMobileChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		106A59261E2E04560045A910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 106A590F1E2E04560045A910 /* PaytmMobileChallenge */;
+			targetProxy = 106A59251E2E04560045A910 /* PBXContainerItemProxy */;
+		};
+		106A59311E2E04560045A910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 106A590F1E2E04560045A910 /* PaytmMobileChallenge */;
+			targetProxy = 106A59301E2E04560045A910 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		106A59171E2E04560045A910 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				106A59181E2E04560045A910 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		106A591C1E2E04560045A910 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				106A591D1E2E04560045A910 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		106A59361E2E04560045A910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		106A59371E2E04560045A910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		106A59391E2E04560045A910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/couchbase-lite-ios",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PaytmMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytmMobileChallenge/PaytmMobileChallenge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		106A593A1E2E04560045A910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D28B33843920A6834357F1 /* Pods-PaytmMobileChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/couchbase-lite-ios",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PaytmMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytmMobileChallenge/PaytmMobileChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		106A593C1E2E04560045A910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				INFOPLIST_FILE = PaytmMobileChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaytmMobileChallenge.app/PaytmMobileChallenge";
+			};
+			name = Debug;
+		};
+		106A593D1E2E04560045A910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				INFOPLIST_FILE = PaytmMobileChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaytmMobileChallenge.app/PaytmMobileChallenge";
+			};
+			name = Release;
+		};
+		106A593F1E2E04560045A910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				INFOPLIST_FILE = PaytmMobileChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PaytmMobileChallenge;
+			};
+			name = Debug;
+		};
+		106A59401E2E04560045A910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6W3V3G54LK;
+				INFOPLIST_FILE = PaytmMobileChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.PaytmMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PaytmMobileChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		106A590B1E2E04560045A910 /* Build configuration list for PBXProject "PaytmMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106A59361E2E04560045A910 /* Debug */,
+				106A59371E2E04560045A910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106A59381E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106A59391E2E04560045A910 /* Debug */,
+				106A593A1E2E04560045A910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106A593B1E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106A593C1E2E04560045A910 /* Debug */,
+				106A593D1E2E04560045A910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106A593E1E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106A593F1E2E04560045A910 /* Debug */,
+				106A59401E2E04560045A910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 106A59081E2E04560045A910 /* Project object */;
+}
