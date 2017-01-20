@@ -6,9 +6,14 @@ import Result
 
 class CouchbaseExchangeRateGateway: ExchangeRateGateway {
     fileprivate let fixerEndPoint = "https://api.fixer.io/latest"
+    fileprivate let couchbaseManager = CBLManager.sharedInstance()
     
     init() {
         
+    }
+    
+    func syncAndFetchExchangeRates(with baseCurrency: ExchangeAbbreviations) -> Future<ExchangeRates, NoError> {
+        return Future<ExchangeRates, NoError>()
     }
     
     func fetchExchangeRates(with baseCurrency: ExchangeAbbreviations) -> Future<ExchangeRates, NoError> {

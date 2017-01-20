@@ -1,5 +1,4 @@
-#ifndef PaytmMobileChallenge_Bridging_Header_h
-#define PaytmMobileChallenge_Bridging_Header_h
+
+#import <CouchbaseLite/CouchbaseLite.h>
 
 
-#endif

@@ -2,5 +2,5 @@ target 'PaytmMobileChallenge' do
     use_frameworks!
     
     pod 'BrightFutures'
-    pod 'couch'
+    pod 'couchbase-lite-ios'
 end
