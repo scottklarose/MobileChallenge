@@ -3,6 +3,8 @@ import BrightFutures
 import Result
 
 protocol ExchangeRateGateway {
-    func fetchExchangeRates(with baseCurrency: ExchangeAbbreviations) -> Future<ExchangeRates, NoError>
-    func syncAndFetchExchangeRates(with baseCurrency: ExchangeAbbreviations) -> Future<ExchangeRates, NoError>
+    func fetchExchangeRates(with baseCurrency: ExchangeAbbreviation) -> Future<ExchangeRate, NoError>
+    func syncExchangeRates(with baseCurrency: ExchangeAbbreviation) -> Future<ExchangeRate, NoError>
+    
+    func destroyGateway()
 }

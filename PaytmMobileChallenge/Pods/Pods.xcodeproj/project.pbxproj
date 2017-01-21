@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D5F3A3F2510965702E6EF02D154AFA /* Pods-PaytmMobileChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3D9707CD9DD95977A5C061895C1360 /* Pods-PaytmMobileChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		022E4F514A2A0B20AD41E2E71802C4B6 /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E9CBF1D740F8E31F3A92A106F8EAC4 /* Result-dummy.m */; };
 		03A121CFE13FFEA740F9C55D15BB74C2 /* SequenceType+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755EF9DC4D95954C2936F8D0B7DC1CD8 /* SequenceType+BrightFutures.swift */; };
 		0457A1C9FE3AE4576BE286D9F8C49F93 /* NSOperationQueue+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF57123C1A2E416D0A858BDF824752 /* NSOperationQueue+BrightFutures.swift */; };
 		15F801282F3290E37F11D67056162741 /* Number+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F237902D9E757F3AD86000749BE6B9 /* Number+BrightFutures.swift */; };
 		1D09397B9B6F32408C40509E8BA3B3B5 /* AsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468757447D11CB154AEDEA3946E4BE9 /* AsyncType.swift */; };
+		2145BFA112C1D631840BD817EAD64EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6AC6C590BA72493B4398FB68C916E1 /* Foundation.framework */; };
 		2244F884A18E3F9BFF659C460C1C1F97 /* AsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FA79DCE57DA6738709A0CED4EC03A /* AsyncType+ResultType.swift */; };
 		3EEEE02AD5C45BACC1F9381B9DB41431 /* MutableAsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E58B6A142FC99D3AEA2E278E0E436 /* MutableAsyncType+ResultType.swift */; };
 		495C3055254AF5A66CF1D1690513AD13 /* ExecutionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D23F00EFC7E029B241417F71E9A2F9 /* ExecutionContext.swift */; };
@@ -24,14 +26,15 @@
 		90D28C0331787AE73F19F7C148A2BA4D /* MutableAsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886666EF4C814D7F45CCAD4558F3818 /* MutableAsyncType.swift */; };
 		964859B824FF437D8BADB3DD72E26B69 /* Dispatch+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D9F25E255D1A6DA50332B67C535B8F /* Dispatch+BrightFutures.swift */; };
 		9F6262C79DBD7F79FD9C5C5659FB2D2E /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5EF315BF0EE24AF3EF263872305B6 /* Promise.swift */; };
+		A385AB1BB1351D8F2201137CE79FBF8C /* Pods-PaytmMobileChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D973661F1D04647B35A7B0A5402E8C7A /* Pods-PaytmMobileChallengeTests-dummy.m */; };
 		B050B15EC964DC20A071903FDF1E5ABD /* Result+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756012838B2D4CDA7D65F40B52D4FB /* Result+BrightFutures.swift */; };
 		B56CF8D1DB2BB0B5A196A44C8E538762 /* BrightFutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3622C2D8C307A802CB680C3742B9128D /* BrightFutures-dummy.m */; };
-		BD941AE4EEBFE1DD0BA836DFF9552DE1 /* Pods-PaytmMobileChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8439B44DB26B6EE8C25C50D0B968B5 /* Pods-PaytmMobileChallenge-dummy.m */; };
+		BD941AE4EEBFE1DD0BA836DFF9552DE1 /* Pods-PaytmMobileChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E667B5F35BD899CE18DE8BBD6AAE842 /* Pods-PaytmMobileChallenge-dummy.m */; };
 		D499630C42A1BC53E7BE2D1EE20819B9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652796B06B8C3ABDEBEB9B4B6340F99 /* Result.swift */; };
 		D88642295E1FB6EB5FB22B2ABBA6F284 /* BrightFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DEF8CDD4EBE9E41DE233ED3D04FF14 /* BrightFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFA75A94C90039DFFAF9A0431AC9BB93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6AC6C590BA72493B4398FB68C916E1 /* Foundation.framework */; };
 		F28FFD679440F582FA473A1E816262E4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D106A04DC5AA79D779F88A891808CA /* Errors.swift */; };
-		F2EFFCA270234E1E3AA4937EF02DB940 /* Pods-PaytmMobileChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DAE75EFBA65D15859B6D68D419F425 /* Pods-PaytmMobileChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2EFFCA270234E1E3AA4937EF02DB940 /* Pods-PaytmMobileChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A875875AE6FFA7E151C656FEEC09023D /* Pods-PaytmMobileChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7CFF42E894EAE4EBFAF6B73A5B014D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6AC6C590BA72493B4398FB68C916E1 /* Foundation.framework */; };
 		FDD7C0AAC87A8775438C43BC31B67A96 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00731B6E7DAD95BABCBD81F4CD9AF4E5 /* Result.framework */; };
 		FF6B85305A1A7402CD4ECA474A25D080 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01C6533FC69BBE82F7E1B5D37289C8 /* Future.swift */; };
@@ -45,7 +48,21 @@
 			remoteGlobalIDString = 4551A02DCD158A5143D803E0FE76C4F6;
 			remoteInfo = BrightFutures;
 		};
+		7A5B3EF7340B179A0752263068A34A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4551A02DCD158A5143D803E0FE76C4F6;
+			remoteInfo = BrightFutures;
+		};
 		A48E8FDB3BEF5800600422FD4DA6DC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CC12EEDCA0ADE298C62268125E8304;
+			remoteInfo = Result;
+		};
+		B54B832B7657DE8BD21AE88162AC952F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -64,76 +81,87 @@
 /* Begin PBXFileReference section */
 		00731B6E7DAD95BABCBD81F4CD9AF4E5 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0179E07049650177DED725FC8567EAA3 /* CBLManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLManager.h; path = CouchbaseLite.framework/Headers/CBLManager.h; sourceTree = "<group>"; };
-		02C40F33F24540B0FFB9C1F1A39A6D3E /* Pods-PaytmMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		033DEAD0F53BEC510AC168CD84B7828B /* BrightFutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-prefix.pch"; sourceTree = "<group>"; };
 		05049AF15657D5A691394D22A9D26F07 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
 		07DEF8CDD4EBE9E41DE233ED3D04FF14 /* BrightFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-umbrella.h"; sourceTree = "<group>"; };
 		0A511EE08A79516EF44F22255670BE14 /* BrightFutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BrightFutures.modulemap; sourceTree = "<group>"; };
 		0E9A34CE070D6F7CF52A1BDE2F3F8436 /* BrightFutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrightFutures.xcconfig; sourceTree = "<group>"; };
 		197ED9774F44040F21848DC878C5429D /* CBLJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLJSON.h; path = CouchbaseLite.framework/Headers/CBLJSON.h; sourceTree = "<group>"; };
-		19DAE75EFBA65D15859B6D68D419F425 /* Pods-PaytmMobileChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaytmMobileChallenge-umbrella.h"; sourceTree = "<group>"; };
+		1B23C5B2C4CA6546782FBA9914E59657 /* Pods-PaytmMobileChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallenge-resources.sh"; sourceTree = "<group>"; };
+		1F9EA386DBFE088657C4915F9CAD726E /* Pods-PaytmMobileChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallengeTests-resources.sh"; sourceTree = "<group>"; };
 		262A86FFD98FD24774C7D8DAA6102BE9 /* CBLView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLView.h; path = CouchbaseLite.framework/Headers/CBLView.h; sourceTree = "<group>"; };
 		26F2B28FC57894826A77264BD986024D /* CBLDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLDatabase.h; path = CouchbaseLite.framework/Headers/CBLDatabase.h; sourceTree = "<group>"; };
+		2B8FCA8269491D3ADD00AB84E96DAB1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E418C449E147F5539A5D0D1F094DC39 /* CouchbaseLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CouchbaseLite.h; path = CouchbaseLite.framework/Headers/CouchbaseLite.h; sourceTree = "<group>"; };
-		2E708F3066F62537B9F811A41666BBA6 /* Pods-PaytmMobileChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallenge-resources.sh"; sourceTree = "<group>"; };
-		3258BE956565DA28A66D4AB0392D3CD6 /* Pods-PaytmMobileChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaytmMobileChallenge.modulemap"; sourceTree = "<group>"; };
+		34EA915647656097E57A8307000AB1BC /* Pods_PaytmMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaytmMobileChallenge.framework; path = "Pods-PaytmMobileChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F989290E4705D3BF285BAFFD59DBEF /* Pods-PaytmMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3622C2D8C307A802CB680C3742B9128D /* BrightFutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrightFutures-dummy.m"; sourceTree = "<group>"; };
 		38756012838B2D4CDA7D65F40B52D4FB /* Result+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+BrightFutures.swift"; path = "Sources/BrightFutures/Result+BrightFutures.swift"; sourceTree = "<group>"; };
 		3B01C6533FC69BBE82F7E1B5D37289C8 /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Sources/BrightFutures/Future.swift; sourceTree = "<group>"; };
 		3E499A0B338397CCAD5E0EB21226E1C4 /* AsyncType+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+Debug.swift"; path = "Sources/BrightFutures/AsyncType+Debug.swift"; sourceTree = "<group>"; };
+		3E667B5F35BD899CE18DE8BBD6AAE842 /* Pods-PaytmMobileChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaytmMobileChallenge-dummy.m"; sourceTree = "<group>"; };
 		424FA79DCE57DA6738709A0CED4EC03A /* AsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+ResultType.swift"; path = "Sources/BrightFutures/AsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		44D8AE6CCC6DE10FF6D599FE2FC5F908 /* Pods-PaytmMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		45A7343A3650DC7AD23FAA29329E7B8A /* CBLModelFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLModelFactory.h; path = CouchbaseLite.framework/Headers/CBLModelFactory.h; sourceTree = "<group>"; };
-		4B54ACA8BACFF777FBDDB8B8B222A5B4 /* BrightFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrightFutures.framework; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B73CE1420C1FB3F3AE9D7D0C9E936A8 /* Pods_PaytmMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaytmMobileChallengeTests.framework; path = "Pods-PaytmMobileChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2A9665E28C1A5573514FB072E96BE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D034443FBE942DC06D75E7E5BD4BB62 /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
 		4D7E9E5E1683182400D0CF555B0CA60A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51533BC6B0374BCC32D68FA492D3D717 /* CBLQuery+Geo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBLQuery+Geo.h"; path = "CouchbaseLite.framework/Headers/CBLQuery+Geo.h"; sourceTree = "<group>"; };
+		542C71FCFD49B98ABD6350197F9CC080 /* Pods-PaytmMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5468757447D11CB154AEDEA3946E4BE9 /* AsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncType.swift; path = Sources/BrightFutures/AsyncType.swift; sourceTree = "<group>"; };
 		55E9CBF1D740F8E31F3A92A106F8EAC4 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
 		56F237902D9E757F3AD86000749BE6B9 /* Number+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Number+BrightFutures.swift"; path = "Sources/BrightFutures/Number+BrightFutures.swift"; sourceTree = "<group>"; };
 		5A70EC9F106F027639F7968AB43049FE /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		5BD71F6572670774B30D4281985E7874 /* Pods-PaytmMobileChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaytmMobileChallengeTests.modulemap"; sourceTree = "<group>"; };
 		5BFC375ABC17BD39A360F79D3EC8AB60 /* CBLQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLQuery.h; path = CouchbaseLite.framework/Headers/CBLQuery.h; sourceTree = "<group>"; };
+		5CF2332AAEAD62B857449C571DD3B51B /* Pods-PaytmMobileChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaytmMobileChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
 		622429FD7BD17EBE256B34E42CC0FDE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6225040E0F617CC013D03CD8D1320151 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64436552B06F6DA695FD33470A53C883 /* Pods-PaytmMobileChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		6681BB3A0A710AADEAD8DB23F38F3BA7 /* Pods-PaytmMobileChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaytmMobileChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6C99413263F780A93D71DCF493B05741 /* InvalidationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvalidationToken.swift; path = Sources/BrightFutures/InvalidationToken.swift; sourceTree = "<group>"; };
 		6D6AC6C590BA72493B4398FB68C916E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		70F5EF315BF0EE24AF3EF263872305B6 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/BrightFutures/Promise.swift; sourceTree = "<group>"; };
 		7375182DCF0B5D342FAB591DB22ECA92 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Result.modulemap; sourceTree = "<group>"; };
 		755EF9DC4D95954C2936F8D0B7DC1CD8 /* SequenceType+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SequenceType+BrightFutures.swift"; path = "Sources/BrightFutures/SequenceType+BrightFutures.swift"; sourceTree = "<group>"; };
+		771195C143D20448FA9A13D875A7AD07 /* BrightFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrightFutures.framework; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		779BFD7C8A464CACD18DCC11B0C5249C /* Pods-PaytmMobileChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallenge-frameworks.sh"; sourceTree = "<group>"; };
 		77DF57123C1A2E416D0A858BDF824752 /* NSOperationQueue+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOperationQueue+BrightFutures.swift"; path = "Sources/BrightFutures/NSOperationQueue+BrightFutures.swift"; sourceTree = "<group>"; };
+		7AEA492B0D45586D11FE3D3C5C931C2C /* Pods-PaytmMobileChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaytmMobileChallenge.modulemap"; sourceTree = "<group>"; };
 		7B8C186FFEE79AF15B864C3CA4CCCADC /* CBLDynamicObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLDynamicObject.h; path = CouchbaseLite.framework/Headers/CBLDynamicObject.h; sourceTree = "<group>"; };
 		889B305C42DAEF30AF81E79B34AB16AC /* CouchbaseLiteListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CouchbaseLiteListener.h; path = CouchbaseLiteListener.framework/Headers/CouchbaseLiteListener.h; sourceTree = "<group>"; };
 		88F312546FDD7EA4DC8544DFFD3FBBB0 /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
 		89D106A04DC5AA79D779F88A891808CA /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/BrightFutures/Errors.swift; sourceTree = "<group>"; };
+		8C8D789C165EABDD38185B0BD0ED550B /* Pods-PaytmMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3D9707CD9DD95977A5C061895C1360 /* Pods-PaytmMobileChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaytmMobileChallengeTests-umbrella.h"; sourceTree = "<group>"; };
 		8DB29B00C8D803914D3724A9943EDDB3 /* CBLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLModel.h; path = CouchbaseLite.framework/Headers/CBLModel.h; sourceTree = "<group>"; };
 		92E90C5159C952C32AA734E00A1D4092 /* CBLListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLListener.h; path = CouchbaseLiteListener.framework/Headers/CBLListener.h; sourceTree = "<group>"; };
 		937116BEE7D7F876997F9A1454BE6232 /* CBLUITableSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLUITableSource.h; path = CouchbaseLite.framework/Headers/CBLUITableSource.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A49A1715E68C8028ED6FB4A3EA4E8595 /* Pods-PaytmMobileChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaytmMobileChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A652796B06B8C3ABDEBEB9B4B6340F99 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
 		A6A88F4D93B0F7B2C307C8E0B6C52632 /* CBLAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLAttachment.h; path = CouchbaseLite.framework/Headers/CBLAttachment.h; sourceTree = "<group>"; };
-		A8BD0365C832F0DF7FA52F9302303016 /* Pods_PaytmMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaytmMobileChallenge.framework; path = "Pods-PaytmMobileChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A875875AE6FFA7E151C656FEEC09023D /* Pods-PaytmMobileChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaytmMobileChallenge-umbrella.h"; sourceTree = "<group>"; };
 		AA36927A114281102F5B23A823F7278C /* CBLRevision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLRevision.h; path = CouchbaseLite.framework/Headers/CBLRevision.h; sourceTree = "<group>"; };
-		AE09BD0BBB7828117287583E7CEF0575 /* Pods-PaytmMobileChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaytmMobileChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B3CB6E72AF93F30CAE9DAF8BE44863F7 /* CBLBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLBase.h; path = CouchbaseLite.framework/Headers/CBLBase.h; sourceTree = "<group>"; };
 		B7D9F25E255D1A6DA50332B67C535B8F /* Dispatch+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dispatch+BrightFutures.swift"; path = "Sources/BrightFutures/Dispatch+BrightFutures.swift"; sourceTree = "<group>"; };
+		BB519C56F17183CF734BCD858A572A1C /* Pods-PaytmMobileChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaytmMobileChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C067ABCC7EFE149B5567734A0775CE37 /* CBLQueryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLQueryBuilder.h; path = CouchbaseLite.framework/Headers/CBLQueryBuilder.h; sourceTree = "<group>"; };
 		CA986256EAE91F09B4D7A65A08750D31 /* CBLAuthenticator+OpenID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBLAuthenticator+OpenID.h"; path = "CouchbaseLite.framework/Headers/CBLAuthenticator+OpenID.h"; sourceTree = "<group>"; };
 		CBFE5774226E347453E13285F277F78D /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/BrightFutures/Async.swift; sourceTree = "<group>"; };
-		D52C81B98930002EF436CE4A097CC9CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EA555BE3D1862E1BCA6FA181F77A94 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D599A3A36E4967298171C4C46F694867 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
 		D826E8C762E58BF8EDFE6EC695922008 /* CBLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLDocument.h; path = CouchbaseLite.framework/Headers/CBLDocument.h; sourceTree = "<group>"; };
 		D87E58B6A142FC99D3AEA2E278E0E436 /* MutableAsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutableAsyncType+ResultType.swift"; path = "Sources/BrightFutures/MutableAsyncType+ResultType.swift"; sourceTree = "<group>"; };
-		DB4D7A09E32B491443B089598F298DE9 /* Pods-PaytmMobileChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaytmMobileChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		D973661F1D04647B35A7B0A5402E8C7A /* Pods-PaytmMobileChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaytmMobileChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		DF42C6882A9075D94C0266525C61252F /* Pods-PaytmMobileChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaytmMobileChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
 		E588B2C029503B916118157E56018502 /* CBLAuthenticator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLAuthenticator.h; path = CouchbaseLite.framework/Headers/CBLAuthenticator.h; sourceTree = "<group>"; };
 		E8D23F00EFC7E029B241417F71E9A2F9 /* ExecutionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExecutionContext.swift; path = Sources/BrightFutures/ExecutionContext.swift; sourceTree = "<group>"; };
 		E92D3F79590354F83487B8C72252273C /* CBLGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLGeometry.h; path = CouchbaseLite.framework/Headers/CBLGeometry.h; sourceTree = "<group>"; };
 		EC0A1817D94E56263497F841A007E511 /* CBLQuery+FullTextSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBLQuery+FullTextSearch.h"; path = "CouchbaseLite.framework/Headers/CBLQuery+FullTextSearch.h"; sourceTree = "<group>"; };
 		EC8254BE33EB33C0A3E6ED3F58FD1A10 /* CBLDatabaseChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLDatabaseChange.h; path = CouchbaseLite.framework/Headers/CBLDatabaseChange.h; sourceTree = "<group>"; };
-		EE2C2C1E8AFF42FB1F9FCBCCEFE35EF9 /* Pods-PaytmMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaytmMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		F2367E0EACF0B9364AC68118163CEA3B /* CBLReplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBLReplication.h; path = CouchbaseLite.framework/Headers/CBLReplication.h; sourceTree = "<group>"; };
 		F42C405440F02F9284845A070E0C7E1D /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		F886666EF4C814D7F45CCAD4558F3818 /* MutableAsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableAsyncType.swift; path = Sources/BrightFutures/MutableAsyncType.swift; sourceTree = "<group>"; };
-		FA8439B44DB26B6EE8C25C50D0B968B5 /* Pods-PaytmMobileChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaytmMobileChallenge-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +179,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CFF42E894EAE4EBFAF6B73A5B014D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED5D6D00936347935BF9A2AD19959D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145BFA112C1D631840BD817EAD64EA0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,22 +239,13 @@
 			path = "../Target Support Files/Result";
 			sourceTree = "<group>";
 		};
-		3346BA12B387E6E5EB00C905377D36A2 /* Targets Support Files */ = {
+		4E53586BF8B7B36A03775B41A20F5370 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFCF199B3BE913C98730094C8AC85B1F /* Pods-PaytmMobileChallenge */,
+				B4F895E22270225D3EE1A41E903FCB9B /* Pods-PaytmMobileChallenge */,
+				6BA2F8253B74BD838504BBA68DB20AF6 /* Pods-PaytmMobileChallengeTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3467A4CE77C57F18F8A5A5460BC0D712 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B54ACA8BACFF777FBDDB8B8B222A5B4 /* BrightFutures.framework */,
-				A8BD0365C832F0DF7FA52F9302303016 /* Pods_PaytmMobileChallenge.framework */,
-				6225040E0F617CC013D03CD8D1320151 /* Result.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		590A5235D886912DC7F1A76C086B1AA3 /* Frameworks */ = {
@@ -230,14 +257,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		699DF42FB6B2EC60F327DBA5C56CD1B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				771195C143D20448FA9A13D875A7AD07 /* BrightFutures.framework */,
+				34EA915647656097E57A8307000AB1BC /* Pods_PaytmMobileChallenge.framework */,
+				4B73CE1420C1FB3F3AE9D7D0C9E936A8 /* Pods_PaytmMobileChallengeTests.framework */,
+				D0EA555BE3D1862E1BCA6FA181F77A94 /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BA2F8253B74BD838504BBA68DB20AF6 /* Pods-PaytmMobileChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B8FCA8269491D3ADD00AB84E96DAB1A /* Info.plist */,
+				5BD71F6572670774B30D4281985E7874 /* Pods-PaytmMobileChallengeTests.modulemap */,
+				BB519C56F17183CF734BCD858A572A1C /* Pods-PaytmMobileChallengeTests-acknowledgements.markdown */,
+				A49A1715E68C8028ED6FB4A3EA4E8595 /* Pods-PaytmMobileChallengeTests-acknowledgements.plist */,
+				D973661F1D04647B35A7B0A5402E8C7A /* Pods-PaytmMobileChallengeTests-dummy.m */,
+				DF42C6882A9075D94C0266525C61252F /* Pods-PaytmMobileChallengeTests-frameworks.sh */,
+				1F9EA386DBFE088657C4915F9CAD726E /* Pods-PaytmMobileChallengeTests-resources.sh */,
+				8D3D9707CD9DD95977A5C061895C1360 /* Pods-PaytmMobileChallengeTests-umbrella.h */,
+				8C8D789C165EABDD38185B0BD0ED550B /* Pods-PaytmMobileChallengeTests.debug.xcconfig */,
+				35F989290E4705D3BF285BAFFD59DBEF /* Pods-PaytmMobileChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-PaytmMobileChallengeTests";
+			path = "Target Support Files/Pods-PaytmMobileChallengeTests";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				E558959B39EC70315F65261DE54A29F2 /* Frameworks */,
 				0DD77BF4021A0C301880D3DD65A77449 /* Pods */,
-				3467A4CE77C57F18F8A5A5460BC0D712 /* Products */,
-				3346BA12B387E6E5EB00C905377D36A2 /* Targets Support Files */,
+				699DF42FB6B2EC60F327DBA5C56CD1B8 /* Products */,
+				4E53586BF8B7B36A03775B41A20F5370 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,6 +350,24 @@
 			path = "couchbase-lite-ios";
 			sourceTree = "<group>";
 		};
+		B4F895E22270225D3EE1A41E903FCB9B /* Pods-PaytmMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				4C2A9665E28C1A5573514FB072E96BE5 /* Info.plist */,
+				7AEA492B0D45586D11FE3D3C5C931C2C /* Pods-PaytmMobileChallenge.modulemap */,
+				6681BB3A0A710AADEAD8DB23F38F3BA7 /* Pods-PaytmMobileChallenge-acknowledgements.markdown */,
+				5CF2332AAEAD62B857449C571DD3B51B /* Pods-PaytmMobileChallenge-acknowledgements.plist */,
+				3E667B5F35BD899CE18DE8BBD6AAE842 /* Pods-PaytmMobileChallenge-dummy.m */,
+				779BFD7C8A464CACD18DCC11B0C5249C /* Pods-PaytmMobileChallenge-frameworks.sh */,
+				1B23C5B2C4CA6546782FBA9914E59657 /* Pods-PaytmMobileChallenge-resources.sh */,
+				A875875AE6FFA7E151C656FEEC09023D /* Pods-PaytmMobileChallenge-umbrella.h */,
+				44D8AE6CCC6DE10FF6D599FE2FC5F908 /* Pods-PaytmMobileChallenge.debug.xcconfig */,
+				542C71FCFD49B98ABD6350197F9CC080 /* Pods-PaytmMobileChallenge.release.xcconfig */,
+			);
+			name = "Pods-PaytmMobileChallenge";
+			path = "Target Support Files/Pods-PaytmMobileChallenge";
+			sourceTree = "<group>";
+		};
 		E558959B39EC70315F65261DE54A29F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,24 +409,6 @@
 			name = SQLite;
 			sourceTree = "<group>";
 		};
-		EFCF199B3BE913C98730094C8AC85B1F /* Pods-PaytmMobileChallenge */ = {
-			isa = PBXGroup;
-			children = (
-				D52C81B98930002EF436CE4A097CC9CB /* Info.plist */,
-				3258BE956565DA28A66D4AB0392D3CD6 /* Pods-PaytmMobileChallenge.modulemap */,
-				AE09BD0BBB7828117287583E7CEF0575 /* Pods-PaytmMobileChallenge-acknowledgements.markdown */,
-				DB4D7A09E32B491443B089598F298DE9 /* Pods-PaytmMobileChallenge-acknowledgements.plist */,
-				FA8439B44DB26B6EE8C25C50D0B968B5 /* Pods-PaytmMobileChallenge-dummy.m */,
-				64436552B06F6DA695FD33470A53C883 /* Pods-PaytmMobileChallenge-frameworks.sh */,
-				2E708F3066F62537B9F811A41666BBA6 /* Pods-PaytmMobileChallenge-resources.sh */,
-				19DAE75EFBA65D15859B6D68D419F425 /* Pods-PaytmMobileChallenge-umbrella.h */,
-				02C40F33F24540B0FFB9C1F1A39A6D3E /* Pods-PaytmMobileChallenge.debug.xcconfig */,
-				EE2C2C1E8AFF42FB1F9FCBCCEFE35EF9 /* Pods-PaytmMobileChallenge.release.xcconfig */,
-			);
-			name = "Pods-PaytmMobileChallenge";
-			path = "Target Support Files/Pods-PaytmMobileChallenge";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -369,6 +425,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				77217E1A9729A91F0AE9CACF00E0B9AB /* Result-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD2A947388A9A5910016968AE89B962 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D5F3A3F2510965702E6EF02D154AFA /* Pods-PaytmMobileChallengeTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +462,7 @@
 			);
 			name = BrightFutures;
 			productName = BrightFutures;
-			productReference = 4B54ACA8BACFF777FBDDB8B8B222A5B4 /* BrightFutures.framework */;
+			productReference = 771195C143D20448FA9A13D875A7AD07 /* BrightFutures.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		98CC12EEDCA0ADE298C62268125E8304 /* Result */ = {
@@ -415,7 +479,7 @@
 			);
 			name = Result;
 			productName = Result;
-			productReference = 6225040E0F617CC013D03CD8D1320151 /* Result.framework */;
+			productReference = D0EA555BE3D1862E1BCA6FA181F77A94 /* Result.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9F42A49254CC1A660FE63DDE4243DD01 /* Pods-PaytmMobileChallenge */ = {
@@ -434,7 +498,26 @@
 			);
 			name = "Pods-PaytmMobileChallenge";
 			productName = "Pods-PaytmMobileChallenge";
-			productReference = A8BD0365C832F0DF7FA52F9302303016 /* Pods_PaytmMobileChallenge.framework */;
+			productReference = 34EA915647656097E57A8307000AB1BC /* Pods_PaytmMobileChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4934D4D8373E641337CCE194AACDE00 /* Pods-PaytmMobileChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0237F5944318F19645C459A4C05C3ECD /* Build configuration list for PBXNativeTarget "Pods-PaytmMobileChallengeTests" */;
+			buildPhases = (
+				DF4FFC1998017FB10891E8E61AF0F172 /* Sources */,
+				CED5D6D00936347935BF9A2AD19959D7 /* Frameworks */,
+				4DD2A947388A9A5910016968AE89B962 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5428B62E887BF2709E42192F76994DE9 /* PBXTargetDependency */,
+				D255C9F946D1C9ADCBF643AB2EF25B4F /* PBXTargetDependency */,
+			);
+			name = "Pods-PaytmMobileChallengeTests";
+			productName = "Pods-PaytmMobileChallengeTests";
+			productReference = 4B73CE1420C1FB3F3AE9D7D0C9E936A8 /* Pods_PaytmMobileChallengeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -454,12 +537,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3467A4CE77C57F18F8A5A5460BC0D712 /* Products */;
+			productRefGroup = 699DF42FB6B2EC60F327DBA5C56CD1B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */,
 				9F42A49254CC1A660FE63DDE4243DD01 /* Pods-PaytmMobileChallenge */,
+				D4934D4D8373E641337CCE194AACDE00 /* Pods-PaytmMobileChallengeTests */,
 				98CC12EEDCA0ADE298C62268125E8304 /* Result */,
 			);
 		};
@@ -508,9 +592,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF4FFC1998017FB10891E8E61AF0F172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A385AB1BB1351D8F2201137CE79FBF8C /* Pods-PaytmMobileChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5428B62E887BF2709E42192F76994DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = 4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */;
+			targetProxy = 7A5B3EF7340B179A0752263068A34A48 /* PBXContainerItemProxy */;
+		};
 		86F2FB52AB466A02BB1373E0C28FE01D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Result;
@@ -528,6 +626,12 @@
 			name = Result;
 			target = 98CC12EEDCA0ADE298C62268125E8304 /* Result */;
 			targetProxy = A48E8FDB3BEF5800600422FD4DA6DC8B /* PBXContainerItemProxy */;
+		};
+		D255C9F946D1C9ADCBF643AB2EF25B4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 98CC12EEDCA0ADE298C62268125E8304 /* Result */;
+			targetProxy = B54B832B7657DE8BD21AE88162AC952F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,6 +663,42 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25A5B761289AE78DE50C1941FE14D67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8D789C165EABDD38185B0BD0ED550B /* Pods-PaytmMobileChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaytmMobileChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaytmMobileChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -671,7 +811,7 @@
 		};
 		D15F200C163C6ECA964BFA11E5BBA460 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE2C2C1E8AFF42FB1F9FCBCCEFE35EF9 /* Pods-PaytmMobileChallenge.release.xcconfig */;
+			baseConfigurationReference = 542C71FCFD49B98ABD6350197F9CC080 /* Pods-PaytmMobileChallenge.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -748,6 +888,41 @@
 			};
 			name = Debug;
 		};
+		EF4DB1AEB2F9CAC4C24C52A40F442F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F989290E4705D3BF285BAFFD59DBEF /* Pods-PaytmMobileChallengeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaytmMobileChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaytmMobileChallengeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F8FEC4FC1C5D7CF5507C961C3FFBE36E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E9A34CE070D6F7CF52A1BDE2F3F8436 /* BrightFutures.xcconfig */;
@@ -783,7 +958,7 @@
 		};
 		FE883411D0C1A54E98C9FDC2795781DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02C40F33F24540B0FFB9C1F1A39A6D3E /* Pods-PaytmMobileChallenge.debug.xcconfig */;
+			baseConfigurationReference = 44D8AE6CCC6DE10FF6D599FE2FC5F908 /* Pods-PaytmMobileChallenge.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -820,6 +995,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0237F5944318F19645C459A4C05C3ECD /* Build configuration list for PBXNativeTarget "Pods-PaytmMobileChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A5B761289AE78DE50C1941FE14D67F /* Debug */,
+				EF4DB1AEB2F9CAC4C24C52A40F442F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

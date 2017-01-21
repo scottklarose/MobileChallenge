@@ -9,5 +9,7 @@ class CurrencyConverterViewController: UITableViewController {
         super.viewDidLoad()
         
         let interactor = ExchangeRateInteractor()
+        
+        
     }
 }

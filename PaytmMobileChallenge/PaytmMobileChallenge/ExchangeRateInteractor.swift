@@ -4,7 +4,7 @@ import Foundation
 
 class ExchangeRateInteractor: NSObject {
     fileprivate let reloadTimeInterval = 5.0
-    fileprivate let exchangeRateGteway: ExchangeRateGateway = CouchbaseExchangeRateGateway()
+    fileprivate let exchangeRateGteway: ExchangeRateGateway = CouchbaseExchangeRateGateway(databaseName: "exchangeratedb")
     fileprivate var refreshTimer: Timer?
     
     override init() {

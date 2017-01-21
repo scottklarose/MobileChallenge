@@ -1,7 +1,7 @@
 
-typealias ExchangeRates = [[String: Double]]
+typealias ExchangeRate = [String: Any]
 
-enum ExchangeAbbreviations: String {
+enum ExchangeAbbreviation: String {
     case australianDollar = "AUD"
     case bulgarianLev = "BGN"
     case brazilianReal = "BRL"
@@ -31,6 +31,7 @@ enum ExchangeAbbreviations: String {
     case singaporeDollar = "SGD"
     case thailandBaht = "THB"
     case turkishNewLira = "TRY"
+    case unitedStatesDollar = "USD"
     case southAfricaRand = "ZAR"
     case euro = "EUR"
 }

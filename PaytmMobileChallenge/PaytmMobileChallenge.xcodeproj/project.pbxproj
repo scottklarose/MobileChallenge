@@ -11,7 +11,6 @@
 		106A59191E2E04560045A910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106A59171E2E04560045A910 /* Main.storyboard */; };
 		106A591B1E2E04560045A910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106A591A1E2E04560045A910 /* Assets.xcassets */; };
 		106A591E1E2E04560045A910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106A591C1E2E04560045A910 /* LaunchScreen.storyboard */; };
-		106A59291E2E04560045A910 /* PaytmMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */; };
 		106A59341E2E04560045A910 /* PaytmMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59331E2E04560045A910 /* PaytmMobileChallengeUITests.swift */; };
 		106A59431E2F2E4C0045A910 /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59421E2F2E4C0045A910 /* CurrencyConverterViewController.swift */; };
 		106A594A1E30686D0045A910 /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59491E30686D0045A910 /* CurrencyConverterPresenter.swift */; };
@@ -19,7 +18,9 @@
 		106A594E1E3069ED0045A910 /* ExchangeRateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A594D1E3069ED0045A910 /* ExchangeRateGateway.swift */; };
 		106A59531E306B9B0045A910 /* CurrencyConverterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */; };
 		106A595C1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A595B1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift */; };
+		10A59FE81E32D2900011F924 /* CouchbaseExchangeRateGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FE71E32D2900011F924 /* CouchbaseExchangeRateGateway.swift */; };
 		31DE2AD7233DB31CECA59990 /* Pods_PaytmMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */; };
+		9496ABABCC041926F0FAD5C1 /* Pods_PaytmMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		106A591D1E2E04560045A910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		106A591F1E2E04560045A910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		106A59241E2E04560045A910 /* PaytmMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmMobileChallengeTests.swift; sourceTree = "<group>"; };
 		106A592A1E2E04560045A910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		106A592F1E2E04560045A910 /* PaytmMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		106A59331E2E04560045A910 /* PaytmMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmMobileChallengeUITests.swift; sourceTree = "<group>"; };
@@ -59,11 +59,14 @@
 		106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTypes.swift; sourceTree = "<group>"; };
 		106A595B1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseExchangeRateGateway.swift; sourceTree = "<group>"; };
 		106A59621E31B3F50045A910 /* PaytmMobileChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaytmMobileChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		10A59FE71E32D2900011F924 /* CouchbaseExchangeRateGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseExchangeRateGateway.swift; sourceTree = "<group>"; };
 		2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		630C657CBF37E36E08317DEE /* Pods_PaytmMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D28B33843920A6834357F1 /* Pods-PaytmMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		DDF668FE5BC04987D78F55FD /* Pods-PaytmMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8468743866B75FB840E021A /* Pods-PaytmMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9496ABABCC041926F0FAD5C1 /* Pods_PaytmMobileChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +136,7 @@
 		106A59271E2E04560045A910 /* PaytmMobileChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				106A59281E2E04560045A910 /* PaytmMobileChallengeTests.swift */,
+				10A59FE61E32D0C70011F924 /* Gateway Tests */,
 				106A592A1E2E04560045A910 /* Info.plist */,
 			);
 			path = PaytmMobileChallengeTests;
@@ -207,6 +211,14 @@
 			name = Types;
 			sourceTree = "<group>";
 		};
+		10A59FE61E32D0C70011F924 /* Gateway Tests */ = {
+			isa = PBXGroup;
+			children = (
+				10A59FE71E32D2900011F924 /* CouchbaseExchangeRateGateway.swift */,
+			);
+			name = "Gateway Tests";
+			sourceTree = "<group>";
+		};
 		9287A7E0BF6361A3CAB9A5FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,8 @@
 			children = (
 				8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */,
 				D1D28B33843920A6834357F1 /* Pods-PaytmMobileChallenge.release.xcconfig */,
+				DDF668FE5BC04987D78F55FD /* Pods-PaytmMobileChallengeTests.debug.xcconfig */,
+				F8468743866B75FB840E021A /* Pods-PaytmMobileChallengeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -253,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 106A593B1E2E04560045A910 /* Build configuration list for PBXNativeTarget "PaytmMobileChallengeTests" */;
 			buildPhases = (
+				6BC52066AE1A3930AE1D61E8 /* [CP] Check Pods Manifest.lock */,
 				106A59201E2E04560045A910 /* Sources */,
 				106A59211E2E04560045A910 /* Frameworks */,
 				106A59221E2E04560045A910 /* Resources */,
+				D223BE76F94CCA0037948BBD /* [CP] Embed Pods Frameworks */,
+				8B5CE75138B28DCC1A05515C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,6 +410,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BC52066AE1A3930AE1D61E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5CE75138B28DCC1A05515C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D671725FCA4586407E6AAA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +453,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D223BE76F94CCA0037948BBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaytmMobileChallengeTests/Pods-PaytmMobileChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,7 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106A59291E2E04560045A910 /* PaytmMobileChallengeTests.swift in Sources */,
+				10A59FE81E32D2900011F924 /* CouchbaseExchangeRateGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +676,7 @@
 		};
 		106A593C1E2E04560045A910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF668FE5BC04987D78F55FD /* Pods-PaytmMobileChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,6 +692,7 @@
 		};
 		106A593D1E2E04560045A910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8468743866B75FB840E021A /* Pods-PaytmMobileChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

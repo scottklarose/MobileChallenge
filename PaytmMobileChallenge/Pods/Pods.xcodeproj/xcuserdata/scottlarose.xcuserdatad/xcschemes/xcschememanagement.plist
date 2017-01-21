@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PaytmMobileChallengeTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>9F42A49254CC1A660FE63DDE4243DD01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4934D4D8373E641337CCE194AACDE00</key>
 		<dict>
 			<key>primary</key>
 			<true/>

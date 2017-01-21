@@ -3,4 +3,10 @@ target 'PaytmMobileChallenge' do
     
     pod 'BrightFutures'
     pod 'couchbase-lite-ios'
+    
+    target 'PaytmMobileChallengeTests' do
+        inherit! :search_paths
+        
+        pod 'BrightFutures'
+    end
 end
