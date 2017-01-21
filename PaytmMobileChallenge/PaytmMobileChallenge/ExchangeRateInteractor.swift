@@ -7,15 +7,21 @@ class ExchangeRateInteractor: NSObject {
     fileprivate let exchangeRateGteway: ExchangeRateGateway = CouchbaseExchangeRateGateway(databaseName: "exchangeratedb")
     fileprivate var refreshTimer: Timer?
     
+    weak var presenter: CurrencyConverterPresenter?
+    
     override init() {
         super.init()
         
-        refreshTimer = Timer.scheduledTimer(timeInterval: reloadTimeInterval, target: self, selector: #selector(updateView(sender:)), userInfo: nil, repeats: true)
+        refreshTimer = Timer.scheduledTimer(timeInterval: reloadTimeInterval, target: self, selector: #selector(updateExchangeRates(sender:)), userInfo: nil, repeats: true)
         refreshTimer?.fire()
     }
     
-    func updateView(sender: Timer) {
+    func updateExchangeRates(sender: Timer) {
         print("")
+    }
+    
+    func fetchExchangeRates() {
+        
     }
     
     deinit {
