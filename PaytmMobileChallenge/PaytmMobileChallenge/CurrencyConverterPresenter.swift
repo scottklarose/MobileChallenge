@@ -1,6 +1,8 @@
 
 protocol CurrencyConverterPresenter: class {
-    func viewDidLoad(with baseCurrency: ExchangeAbbreviation, valueToConvert: Double)
+    func loadCurrencyValues(with baseCurrency: ExchangeAbbreviation, valueToConvert: Double)
+    func updateRates(with newValue: Double)
+    
     func presentCurrencyExchangeRates(rates: ExchangeRate)
-    func updateBaseCurrency(base: ExchangeAbbreviation)
+    func currentBaseCurrency() -> ExchangeAbbreviation?
 }

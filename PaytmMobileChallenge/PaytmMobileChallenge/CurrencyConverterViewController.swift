@@ -3,6 +3,9 @@ import Foundation
 import UIKit
 
 class CurrencyConverterViewController: UITableViewController {
+    @IBOutlet weak var currencyValueField: UITextField!
+    @IBOutlet weak var baseCurrencyField: UITextField!
+    
     var viewData: CurrencyConverterData?
     var currencyPresenter: CurrencyConverterPresenter?
     
@@ -10,10 +13,25 @@ class CurrencyConverterViewController: UITableViewController {
         super.viewDidLoad()
         
         loadPresenter()
+        setupTextFieldDelegates()
+        addTapGestureToView()
     }
     
     fileprivate func loadPresenter() {
-        currencyPresenter?.viewDidLoad(with: .canadianDollar, valueToConvert: 1)
+        currencyPresenter?.loadCurrencyValues(with: .canadianDollar, valueToConvert: 1)
+    }
+    
+    fileprivate func setupTextFieldDelegates() {
+        currencyValueField.delegate = self
+    }
+    
+    fileprivate func addTapGestureToView() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard(recognizer:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func closeKeyboard(recognizer: UIGestureRecognizer) {
+        currencyValueField.resignFirstResponder()
     }
     
     //MARK: UITableViewController Override Methods
@@ -45,5 +63,15 @@ extension CurrencyConverterViewController: CurrencyConverterView {
     func updateViewData(data: CurrencyConverterData) {
         viewData = data
         tableView.reloadData()
+    }
+}
+
+extension CurrencyConverterViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let newValue = Double(textField.text ?? "") else {
+            return
+        }
+    
+        currencyPresenter?.updateRates(with: newValue)
     }
 }

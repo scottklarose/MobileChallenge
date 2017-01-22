@@ -2,17 +2,26 @@
 class CurrencyConverterPresenterImpl {
     fileprivate var baseCurrency: ExchangeAbbreviation?
     fileprivate var conversionValue: Double?
-    var currencyInteractor: ExchangeRateInteractor?
     
+    var currencyInteractor: ExchangeRateInteractor?
     weak var currencyView: CurrencyConverterView?
 }
 
 extension CurrencyConverterPresenterImpl: CurrencyConverterPresenter {
-    func viewDidLoad(with baseCurrency: ExchangeAbbreviation, valueToConvert: Double) {
+    func loadCurrencyValues(with baseCurrency: ExchangeAbbreviation, valueToConvert: Double) {
         self.baseCurrency = baseCurrency
         conversionValue = valueToConvert
         
         currencyInteractor?.fetchAndStoreCurrencyExchangeRates(with: baseCurrency)
+    }
+    
+    func updateRates(with newValue: Double) {
+        guard let base = baseCurrency else {
+            return
+        }
+        
+        conversionValue = newValue
+        currencyInteractor?.fetchExchangeRates(with: base)
     }
     
     func presentCurrencyExchangeRates(rates: ExchangeRate) {
@@ -40,7 +49,7 @@ extension CurrencyConverterPresenterImpl: CurrencyConverterPresenter {
         }.flatMap { $0 }
     }
     
-    func updateBaseCurrency(base: ExchangeAbbreviation) {
-        baseCurrency = base
+    func currentBaseCurrency() -> ExchangeAbbreviation? {
+        return baseCurrency
     }
 }

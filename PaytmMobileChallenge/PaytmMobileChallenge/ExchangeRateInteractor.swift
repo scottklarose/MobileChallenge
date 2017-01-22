@@ -3,7 +3,7 @@ import Foundation
 
 
 class ExchangeRateInteractor: NSObject {
-    fileprivate let reloadTimeInterval = 5.0
+    fileprivate let reloadTimeInterval = 1800.0
     fileprivate let exchangeRateGteway: ExchangeRateGateway = CouchbaseExchangeRateGateway(databaseName: "exchangeratedb")
     fileprivate var refreshTimer: Timer?
     
@@ -23,15 +23,21 @@ class ExchangeRateInteractor: NSObject {
     }
     
     func updateExchangeRates(sender: Timer) {
-        print("")
-    }
-    
-    func fetchExchangeRates() {
+        guard let baseCurrency = presenter?.currentBaseCurrency() else {
+            return
+        }
         
+        fetchAndStoreCurrencyExchangeRates(with: baseCurrency)
     }
     
     deinit {
         refreshTimer?.invalidate()
         refreshTimer = nil
+    }
+    
+    func fetchExchangeRates(with baseCurrency: ExchangeAbbreviation) {
+        exchangeRateGteway.fetchExchangeRates(with: baseCurrency).onSuccess { [weak self] rates in
+            self?.presenter?.presentCurrencyExchangeRates(rates: rates)
+        }
     }
 }

@@ -25,6 +25,7 @@
 		10A59FF11E3418990011F924 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF01E3418990011F924 /* MainConfigurator.swift */; };
 		10A59FF31E344A140011F924 /* CurrencyExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF21E344A140011F924 /* CurrencyExchangeTableViewCell.swift */; };
 		10A59FF61E3454600011F924 /* ExchangeAbbreviation+presentableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF51E3454600011F924 /* ExchangeAbbreviation+presentableString.swift */; };
+		10A59FF71E348ED80011F924 /* CurrencyConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A59491E30686D0045A910 /* CurrencyConverterPresenter.swift */; };
 		31DE2AD7233DB31CECA59990 /* Pods_PaytmMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */; };
 		9496ABABCC041926F0FAD5C1 /* Pods_PaytmMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -539,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A59FF71E348ED80011F924 /* CurrencyConverterPresenter.swift in Sources */,
 				106A59341E2E04560045A910 /* PaytmMobileChallengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

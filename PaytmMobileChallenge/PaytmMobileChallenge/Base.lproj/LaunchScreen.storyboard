@@ -20,12 +20,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paytm-logo" translatesAutoresizingMaskIntoConstraints="NO" id="67f-YC-KrH">
+                                <rect key="frame" x="78" y="260" width="219" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="7v4-QJ-2Ad"/>
+                                    <constraint firstAttribute="width" constant="219" id="vXw-Uf-oNo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="67f-YC-KrH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5lf-V2-dx9"/>
+                            <constraint firstItem="67f-YC-KrH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HXN-BJ-CrY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paytm-logo" width="940" height="626"/>
+    </resources>
 </document>
