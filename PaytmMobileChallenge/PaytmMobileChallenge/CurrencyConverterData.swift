@@ -4,6 +4,7 @@ struct CurrencyConverterData {
 }
 
 struct CurrencyItem {
-    let currencyAbbreviation: ExchangeAbbreviation
-    let currencyRate: String
+    let currencyAbbreviation: String
+    let fullCurrencyName: String
+    let equivalentCurrency: String
 }

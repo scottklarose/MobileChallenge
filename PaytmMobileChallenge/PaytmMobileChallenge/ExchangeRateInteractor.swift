@@ -16,6 +16,12 @@ class ExchangeRateInteractor: NSObject {
         refreshTimer?.fire()
     }
     
+    func fetchAndStoreCurrencyExchangeRates(with baseCurrency: ExchangeAbbreviation) {
+        exchangeRateGteway.syncExchangeRates(with: baseCurrency).onSuccess { [weak self] rates in
+            self?.presenter?.presentCurrencyExchangeRates(rates: rates)
+        }
+    }
+    
     func updateExchangeRates(sender: Timer) {
         print("")
     }

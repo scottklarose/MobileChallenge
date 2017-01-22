@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pzA-vW-kjQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,18 +13,53 @@
         <scene sceneID="GWZ-2j-h5L">
             <objects>
                 <tableViewController id="fqq-gN-87l" customClass="CurrencyConverterViewController" customModule="PaytmMobileChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="X2b-Dq-kQJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="X2b-Dq-kQJ">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="IiH-IP-gHI">
-                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CurrencyExchangeTableViewCell" rowHeight="60" id="IiH-IP-gHI" customClass="CurrencyExchangeTableViewCell" customModule="PaytmMobileChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IiH-IP-gHI" id="QgG-Tf-Pxq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.75" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-ZB-VNI">
+                                            <rect key="frame" x="319" y="8" width="48" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Abbreviation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISp-jH-rxv">
+                                            <rect key="frame" x="8" y="10" width="181" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Full Currency Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBR-aZ-jg5">
+                                            <rect key="frame" x="8" y="30.5" width="112" height="18.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HBR-aZ-jg5" firstAttribute="top" secondItem="ISp-jH-rxv" secondAttribute="bottom" constant="-1" id="1lp-J6-rbJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="pNd-ZB-VNI" secondAttribute="bottom" constant="8" id="OTB-ck-KGd"/>
+                                        <constraint firstItem="ISp-jH-rxv" firstAttribute="top" secondItem="QgG-Tf-Pxq" secondAttribute="top" constant="10" id="QZ5-tq-Va7"/>
+                                        <constraint firstItem="pNd-ZB-VNI" firstAttribute="top" secondItem="QgG-Tf-Pxq" secondAttribute="top" constant="8" id="Z5M-D8-nig"/>
+                                        <constraint firstAttribute="bottom" secondItem="HBR-aZ-jg5" secondAttribute="bottom" constant="11" id="ZqW-Mh-W2d"/>
+                                        <constraint firstAttribute="trailing" secondItem="pNd-ZB-VNI" secondAttribute="trailing" constant="8" id="jlm-cE-dWf"/>
+                                        <constraint firstItem="ISp-jH-rxv" firstAttribute="leading" secondItem="QgG-Tf-Pxq" secondAttribute="leading" constant="8" id="lEp-SN-OVj"/>
+                                        <constraint firstItem="HBR-aZ-jg5" firstAttribute="leading" secondItem="QgG-Tf-Pxq" secondAttribute="leading" constant="8" id="pWN-q3-4gF"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="convertedCurrency" destination="pNd-ZB-VNI" id="xu8-ck-O78"/>
+                                    <outlet property="currencyAbbreviation" destination="ISp-jH-rxv" id="oQB-0Z-GjH"/>
+                                    <outlet property="fullCurrency" destination="HBR-aZ-jg5" id="XkL-rF-KbM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -50,7 +85,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WLg-mp-Ei5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pzA-vW-kjQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="pzA-vW-kjQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KO4-sr-Bvs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

@@ -22,6 +22,9 @@
 		10A59FEA1E3311A80011F924 /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FE91E3311A80011F924 /* CurrencyConverterView.swift */; };
 		10A59FED1E33135A0011F924 /* CurrencyConverterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FEC1E33135A0011F924 /* CurrencyConverterData.swift */; };
 		10A59FEF1E331C9C0011F924 /* CurrencyConverterPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FEE1E331C9B0011F924 /* CurrencyConverterPresenterImpl.swift */; };
+		10A59FF11E3418990011F924 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF01E3418990011F924 /* MainConfigurator.swift */; };
+		10A59FF31E344A140011F924 /* CurrencyExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF21E344A140011F924 /* CurrencyExchangeTableViewCell.swift */; };
+		10A59FF61E3454600011F924 /* ExchangeAbbreviation+presentableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A59FF51E3454600011F924 /* ExchangeAbbreviation+presentableString.swift */; };
 		31DE2AD7233DB31CECA59990 /* Pods_PaytmMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64453915E1B3B4EFBEF6CD2 /* Pods_PaytmMobileChallenge.framework */; };
 		9496ABABCC041926F0FAD5C1 /* Pods_PaytmMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,9 @@
 		10A59FE91E3311A80011F924 /* CurrencyConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
 		10A59FEC1E33135A0011F924 /* CurrencyConverterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterData.swift; sourceTree = "<group>"; };
 		10A59FEE1E331C9B0011F924 /* CurrencyConverterPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterPresenterImpl.swift; sourceTree = "<group>"; };
+		10A59FF01E3418990011F924 /* MainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		10A59FF21E344A140011F924 /* CurrencyExchangeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeTableViewCell.swift; sourceTree = "<group>"; };
+		10A59FF51E3454600011F924 /* ExchangeAbbreviation+presentableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExchangeAbbreviation+presentableString.swift"; sourceTree = "<group>"; };
 		2509082602EBEACBE63C16DF /* Pods_PaytmMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		630C657CBF37E36E08317DEE /* Pods_PaytmMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytmMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F47CCBF912C034AFE9C0721 /* Pods-PaytmMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytmMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaytmMobileChallenge/Pods-PaytmMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		106A59121E2E04560045A910 /* PaytmMobileChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				10A59FF01E3418990011F924 /* MainConfigurator.swift */,
 				106A59411E2F2E220045A910 /* Paytm VIP Modules */,
 				106A59471E30668F0045A910 /* Gateways */,
 				106A59621E31B3F50045A910 /* PaytmMobileChallenge-Bridging-Header.h */,
@@ -168,6 +175,7 @@
 		106A59441E3065DD0045A910 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10A59FF41E344A1A0011F924 /* Table Cells */,
 				10A59FE91E3311A80011F924 /* CurrencyConverterView.swift */,
 				106A59421E2F2E4C0045A910 /* CurrencyConverterViewController.swift */,
 			);
@@ -216,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				106A59521E306B9B0045A910 /* CurrencyConverterTypes.swift */,
+				10A59FF51E3454600011F924 /* ExchangeAbbreviation+presentableString.swift */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -234,6 +243,14 @@
 				10A59FEC1E33135A0011F924 /* CurrencyConverterData.swift */,
 			);
 			name = Presentables;
+			sourceTree = "<group>";
+		};
+		10A59FF41E344A1A0011F924 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				10A59FF21E344A140011F924 /* CurrencyExchangeTableViewCell.swift */,
+			);
+			name = "Table Cells";
 			sourceTree = "<group>";
 		};
 		9287A7E0BF6361A3CAB9A5FC /* Frameworks */ = {
@@ -497,12 +514,15 @@
 				106A595C1E3081F50045A910 /* CouchbaseExchangeRateGateway.swift in Sources */,
 				106A594E1E3069ED0045A910 /* ExchangeRateGateway.swift in Sources */,
 				106A59141E2E04560045A910 /* AppDelegate.swift in Sources */,
+				10A59FF31E344A140011F924 /* CurrencyExchangeTableViewCell.swift in Sources */,
 				106A59531E306B9B0045A910 /* CurrencyConverterTypes.swift in Sources */,
 				10A59FEA1E3311A80011F924 /* CurrencyConverterView.swift in Sources */,
 				10A59FEF1E331C9C0011F924 /* CurrencyConverterPresenterImpl.swift in Sources */,
 				106A594C1E30690A0045A910 /* ExchangeRateInteractor.swift in Sources */,
 				10A59FED1E33135A0011F924 /* CurrencyConverterData.swift in Sources */,
+				10A59FF61E3454600011F924 /* ExchangeAbbreviation+presentableString.swift in Sources */,
 				106A59431E2F2E4C0045A910 /* CurrencyConverterViewController.swift in Sources */,
+				10A59FF11E3418990011F924 /* MainConfigurator.swift in Sources */,
 				106A594A1E30686D0045A910 /* CurrencyConverterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

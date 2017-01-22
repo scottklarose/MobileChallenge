@@ -4,11 +4,16 @@ import UIKit
 
 class CurrencyConverterViewController: UITableViewController {
     var viewData: CurrencyConverterData?
+    var currencyPresenter: CurrencyConverterPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        loadPresenter()
+    }
+    
+    fileprivate func loadPresenter() {
+        currencyPresenter?.viewDidLoad(with: .canadianDollar, valueToConvert: 1)
     }
     
     //MARK: UITableViewController Override Methods
@@ -21,15 +26,18 @@ class CurrencyConverterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let item = viewData?.currencyItems[indexPath.row] else {
+        guard let item = viewData?.currencyItems[indexPath.row],
+                let cell = tableView.dequeueReusableCell(withIdentifier: "CurrencyExchangeTableViewCell", for: indexPath) as? CurrencyExchangeTableViewCell else {
             return UITableViewCell()
         }
         
-        return UITableViewCell()
+        cell.populate(item: item)
+        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 0
+        return 60
     }
 }
 
@@ -39,5 +47,3 @@ extension CurrencyConverterViewController: CurrencyConverterView {
         tableView.reloadData()
     }
 }
-
-

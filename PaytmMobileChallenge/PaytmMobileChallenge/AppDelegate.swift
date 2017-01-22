@@ -15,8 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        loadInitialModule()
         
         return true
+    }
+    
+    fileprivate func loadInitialModule() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.rootViewController = MainConfigurator().configureMainModule()
+        window?.makeKeyAndVisible()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
