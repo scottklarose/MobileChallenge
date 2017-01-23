@@ -14,6 +14,8 @@ class CurrencyConverterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        currencyPresenter?.viewDidLoad()
+        
         initialPresenterLoad()
         initializeSectionHeader()
         setupCurrencyValueField()

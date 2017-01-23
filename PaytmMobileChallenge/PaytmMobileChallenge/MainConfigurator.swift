@@ -11,10 +11,6 @@ class MainConfigurator {
         let presenter = CurrencyConverterPresenterImpl()
         presenter.currencyView = mainView
         
-        let interactor = ExchangeRateInteractor()
-        interactor.presenter = presenter
-        
-        presenter.currencyInteractor = interactor
         mainView.currencyPresenter = presenter
         
         return controller

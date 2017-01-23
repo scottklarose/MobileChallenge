@@ -1,18 +1,45 @@
 
-class CurrencyConverterPresenterImpl {
+class CurrencyConverterPresenterImpl: NSObject {
     fileprivate var baseCurrency: ExchangeAbbreviation?
     fileprivate var conversionValue: Double?
+    fileprivate var refreshTimer: Timer?
     
-    var currencyInteractor: ExchangeRateInteractor?
+    fileprivate let reloadTimeInterval = 1800.0
+    fileprivate let currencyInteractor = ExchangeRateInteractor()
+    
     weak var currencyView: CurrencyConverterView?
+    
+    override init() {
+        super.init()
+        
+        refreshTimer = Timer.scheduledTimer(timeInterval: reloadTimeInterval, target: self, selector: #selector(updateExchangeRates(sender:)), userInfo: nil, repeats: true)
+        refreshTimer?.fire()
+    }
+    
+    func updateExchangeRates(sender: Timer) {
+        guard let base = baseCurrency else {
+            return
+        }
+        
+        currencyInteractor.fetchExchangeRates(with: base)
+    }
+    
+    deinit {
+        refreshTimer?.invalidate()
+        refreshTimer = nil
+    }
 }
 
 extension CurrencyConverterPresenterImpl: CurrencyConverterPresenter {
+    func viewDidLoad() {
+        currencyInteractor.listenerDelegate = self
+    }
+    
     func loadCurrencyValues(with baseCurrency: ExchangeAbbreviation, valueToConvert: Double) {
         self.baseCurrency = baseCurrency
         conversionValue = valueToConvert
         
-        currencyInteractor?.fetchAndStoreCurrencyExchangeRates(with: baseCurrency)
+        currencyInteractor.fetchAndStoreCurrencyExchangeRates(with: baseCurrency)
     }
     
     func updateRates(with newValue: Double) {
@@ -21,12 +48,7 @@ extension CurrencyConverterPresenterImpl: CurrencyConverterPresenter {
         }
         
         conversionValue = newValue
-        currencyInteractor?.fetchExchangeRates(with: base)
-    }
-    
-    func presentCurrencyExchangeRates(rates: ExchangeRate) {
-        let viewData = convertExchangeRateToPresentable(rates: rates)
-        currencyView?.updateViewData(data: viewData)
+        currencyInteractor.fetchExchangeRates(with: base)
     }
     
     fileprivate func convertExchangeRateToPresentable(rates: ExchangeRate) -> CurrencyConverterData {
@@ -38,18 +60,21 @@ extension CurrencyConverterPresenterImpl: CurrencyConverterPresenter {
         return ratesArray.map { rate -> CurrencyItem? in
             guard let abbreviation = ExchangeAbbreviation(rawValue: rate.key),
                 let exchangeRate = rate.value as? Double,
-                let base = conversionValue else {
+                let baseValue = conversionValue else {
                     return nil
             }
             
-            let convertedCurrency = base * exchangeRate
+            let convertedCurrency = baseValue * exchangeRate
             let convertedCurrencyString = String(format: "%.2f", convertedCurrency)
             
             return CurrencyItem(currencyAbbreviation: abbreviation.rawValue, fullCurrencyName: abbreviation.presentableString(), equivalentCurrency: convertedCurrencyString)
         }.flatMap { $0 }
     }
-    
-    func currentBaseCurrency() -> ExchangeAbbreviation? {
-        return baseCurrency
+}
+
+extension CurrencyConverterPresenterImpl: InteractorListenerDelegate {
+    func exchangeRatesUpdated(rates: ExchangeRate) {
+        let viewData = convertExchangeRateToPresentable(rates: rates)
+        currencyView?.updateViewData(data: viewData)
     }
 }
