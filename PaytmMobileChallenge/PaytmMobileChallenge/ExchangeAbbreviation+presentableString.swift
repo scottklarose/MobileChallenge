@@ -1,4 +1,8 @@
 extension ExchangeAbbreviation {
+    static var allAbbreviations: [ExchangeAbbreviation] {
+        return iterateEnum().map { $0 }
+    }
+    
     func presentableString() -> String {
         switch self {
         case .australianDollar:
@@ -65,6 +69,23 @@ extension ExchangeAbbreviation {
             return "South African Rand"
         case .euro:
             return "Euro"
+        }
+    }
+    
+    fileprivate static func iterateEnum() -> AnyIterator<ExchangeAbbreviation> {
+        var i = 0
+        
+        return AnyIterator {
+            let next = withUnsafePointer(to: &i) {
+                $0.withMemoryRebound(to: self, capacity: 1) { $0.pointee }
+            }
+            
+            if next.hashValue != i {
+                return nil
+            }
+            
+            i += 1
+            return next
         }
     }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrencyExchangeHeaderView" customModule="PaytmMobileChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CAD (Click to Change)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEb-xG-AbO">
+                    <rect key="frame" x="8" y="5" width="359" height="30"/>
+                    <color key="tintColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jEb-xG-AbO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0YJ-3e-kmB"/>
+                <constraint firstAttribute="bottom" secondItem="jEb-xG-AbO" secondAttribute="bottom" constant="5" id="Grs-qk-DPw"/>
+                <constraint firstItem="jEb-xG-AbO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="QJk-QF-Mxg"/>
+                <constraint firstAttribute="trailing" secondItem="jEb-xG-AbO" secondAttribute="trailing" constant="8" id="dKo-an-VZc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baseCurrencyField" destination="jEb-xG-AbO" id="VPM-pc-gsw"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-261"/>
+        </view>
+    </objects>
+</document>

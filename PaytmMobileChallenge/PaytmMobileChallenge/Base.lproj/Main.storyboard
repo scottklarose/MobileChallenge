@@ -17,14 +17,9 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.11764705882352941" green="0.16862745098039217" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="K37-fE-N6z">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CurrencyExchangeTableViewCell" rowHeight="60" id="IiH-IP-gHI" customClass="CurrencyExchangeTableViewCell" customModule="PaytmMobileChallenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IiH-IP-gHI" id="QgG-Tf-Pxq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -75,11 +70,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="suE-Kf-SHd">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" textAlignment="right" minimumFontSize="17" id="itg-XG-YDU">
-                            <rect key="frame" x="10" y="7" width="355" height="30"/>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" image="edit-icon" style="plain" id="oi6-gw-88g">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" placeholder="Currency" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" id="itg-XG-YDU">
+                            <rect key="frame" x="73" y="7" width="294" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert"/>
                         </textField>
                     </navigationItem>
@@ -96,7 +95,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="pzA-vW-kjQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KO4-sr-Bvs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="KO4-sr-Bvs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.36078431372549019" green="0.74901960784313726" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,4 +110,7 @@
             <point key="canvasLocation" x="16.800000000000001" y="-393.55322338830587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="edit-icon" width="40" height="40"/>
+    </resources>
 </document>
