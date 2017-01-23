@@ -1,4 +1,4 @@
-#Scott Larose - Mobile Devloper Challenge
+#Scott Larose - Mobile Developer Challenge
 
 ##Assumptions
 - I assumed that the "refreshed no more frequently than every 30 minutes" was a requirement and added a timer within the presenter to update the rates from the backend every 30 minutes.
