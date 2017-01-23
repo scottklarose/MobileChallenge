@@ -4,6 +4,7 @@
 - I assumed that the "refreshed no more frequently than every 30 minutes" was a requirement and added a timer within the presenter to update the rates from the backend every 30 minutes.
 - I assumed that the provided UI was a suggestion and slightly modified it.
 - I assumed that "rates should be persisted locally" meant saving them into a local store, not a file or locally in memory.
+- I assumed that the application was to be tested/run within the simulator and did almost no testing of the UI or functionality on actual devices.
 
 ##Features
 - I used a slimmed down version of the VIPER architecture to implement the solution.
